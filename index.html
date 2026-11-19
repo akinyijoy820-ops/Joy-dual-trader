@@ -1,1 +1,65 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Joy Dual Trader</title>
+<style>
+body {
+  background:#101827;
+  color:white;
+  font-family:Arial,sans-serif;
+  text-align:center;
+  padding:25px;
+}
+h1 {color:#55d6a5;}
+.card {
+  background:#1e293b;
+  padding:20px;
+  margin:15px auto;
+  border-radius:14px;
+  max-width:350px;
+}
+.green {color:#55d6a5;}
+.red {color:#ff7373;}
+button {
+  background:#55d6a5;
+  border:0;
+  padding:13px 25px;
+  border-radius:8px;
+  font-weight:bold;
+}
+.small {color:#aab5c5;font-size:13px;}
+</style>
+</head>
+<body>
+
+<h1>JOY DUAL TRADER</h1>
+<p>Higher & Lower Trading Dashboard</p>
+
+<div class="card">
+<h2>Demo Trading Setup</h2>
+<p>Market: Volatility 100 (1s)</p>
+<p>Higher stake: <span class="green">$1</span></p>
+<p>Lower stake: <span class="red">$1</span></p>
+<p>Total stake: $2</p>
+</div>
+
+<div class="card">
+<h2>Trading Status</h2>
+<p id="status">Not connected to Deriv</p>
+<button onclick="alert('Trading is not connected yet. No orders have been placed.')">
+Test Dashboard
+</button>
+</div>
+
+<p class="small">
+Demo interface only. No real trades are executed.
+</p>
+<p class="small">
+API connection and secure authorisation still need to be configured.
+</p>
+
+</body>
+</html>
